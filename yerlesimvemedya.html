@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bölüm 3.4 & 3.5 Saf HTML Uygulaması</title>
+</head>
+<body>
+
+    <!-- 3.4.3.1. <header> ve 3.4.3.8. <hgroup> -->
+    <header>
+        <hgroup>
+            <h1>Web Teknolojileri Eğitimi</h1>
+            <p>HTML5 Yerleşim ve Medya Elemanları Pratik Uygulaması</p>
+        </hgroup>
+    </header>
+
+    <hr>
+
+    <!-- 3.4.3.2. <nav> -->
+    <nav>
+        <a href="#giris">Ana Sayfa</a> |
+        <a href="#medya">Medya Öğeleri</a> |
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <hr>
+
+    <!-- 3.4.3.3. <section> -->
+    <section id="giris">
+        <!-- 3.4.3.4. <article> -->
+        <article>
+            <h2>3.4. Yerleşim Elemanları</h2>
+            
+            <!-- 3.4.1. <div> ve 3.4.2. <span> -->
+            <div>
+                Bu metin bir <b>div</b> etiketi içerisindedir. Div bir blok elemandır.
+                İçerisinde kullanılan <span style="color:green;font-weight:bold;">span etiketi</span> ise satır içi (inline) bir elemandır.
+            </div>
+
+            <p>HTML5 anlamsal etiketleri sayfa yapısını organize etmemizi sağlar.</p>
+
+            <!-- 3.4.3.7. <figure> ve <figcaption> -->
+            <!-- 3.5.1. <img> ve Özellikleri -->
+            <figure>
+                <img src="https://picsum.photos/300/150" alt="Örnek Görsel" title="Doğa Manzarası" width="300" height="150">
+                <figcaption>Şekil 1.1: HTML5 img ve figure etiketleri ile görsel kullanımı.</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- 3.5. Medya Elemanları -->
+    <section id="medya">
+        <article>
+            <h2>3.5. Medya Elemanları</h2>
+
+            <!-- 3.5.2. <video> Kullanımı ve Özellikleri -->
+            <h3>3.5.2. Video Kullanımı</h3>
+            <p>Aşağıda controls, width, height, muted, loop, poster ve preload özellikleri kullanılmıştır:</p>
+            
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                   controls 
+                   width="320" 
+                   height="240" 
+                   muted 
+                   loop 
+                   preload="metadata" 
+                   poster="https://picsum.photos/320/240">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+
+            <br><br>
+
+            <!-- 3.5.3. <audio> Kullanımı ve Özellikleri -->
+            <h3>3.5.3. Ses (Audio) Kullanımı</h3>
+            <p>Aşağıda controls, loop ve preload özellikleri kullanılmıştır:</p>
+
+            <audio src="https://www.w3schools.com/html/horse.mp3" 
+                   controls 
+                   loop 
+                   preload="auto">
+                Tarayıcınız audio etiketini desteklemiyor.
+            </audio>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- 3.4.3.6. <aside> -->
+    <aside>
+        <h3>3.4.3.6. Yan İçerik (Aside)</h3>
+        <p><strong>Önemli Not:</strong> Video ve ses etiketlerinde <code>controls</code> özniteliği yazılmazsa oynatma butonları ekranda görünmez.</p>
+    </aside>
+
+    <hr>
+
+    <!-- 3.4.3.5. <footer> -->
+    <footer>
+        <p>&copy; 2026 Web Tabanlı Uygulama Geliştirme Dersi</p>
+    </footer>
+
+</body>
+</html>
